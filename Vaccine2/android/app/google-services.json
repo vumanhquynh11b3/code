@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "898327206871",
+    "project_id": "tiemvaccine-30d51",
+    "storage_bucket": "tiemvaccine-30d51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898327206871:android:708c37e5688c1e489d4992",
+        "android_client_info": {
+          "package_name": "com.example.vaccine2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898327206871-nvi7ht1cg8in4k671nohcp6flr7rea83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJIYUVDSVSXJLlp5LuGgAnv3Et6gPKezY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898327206871-nvi7ht1cg8in4k671nohcp6flr7rea83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
