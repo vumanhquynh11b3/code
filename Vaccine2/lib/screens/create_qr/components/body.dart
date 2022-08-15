@@ -143,8 +143,8 @@ class _QRGeneratorSharePageState extends State<QRGeneratorSharePage> {
 
   Future<String> ReturnQr(String id_congdan,String id_dottiem) async {
     String res = await SqlConn.readData(
-        "SELECT [dbo].[DSDangKyTiem].ID_DangKyTiem,[dbo].[DSDangKyTiem].ID_CongDan,[dbo].[DSDangKyTiem].ID_DotTiem,[dbo].[DSDangKyTiem].TrangThai,[dbo].[ToKhaiYTe].NoiDenTrongVong14Ngay, [dbo].[ToKhaiYTe].DauHieuBenhCovid, [dbo].[ToKhaiYTe].TiepXucNguoiCoBieuHIen,[dbo].[ToKhaiYTe].TiepXucNguoiTuNuocCoBenh,[dbo].[ToKhaiYTe].TiepXucNguoiBenh,[dbo].[DSDangKyTiem].STTMuiTiem,[dbo].[DSDangKyTiem].YKienDongThuan FROM [dbo].[ToKhaiYTe],[dbo].[DSDangKyTiem] WHERE [dbo].[ToKhaiYTe].ID_ToKhaiYTe=[dbo].[DSDangKyTiem].ID_DangKyTiem AND ID_CongDan='"+id_congdan+"' AND [dbo].[DSDangKyTiem].ID_DotTiem='"+id_dottiem+"'");
-    //  print(res.toString());
+        "SELECT [dbo].[DSDangKyTiem].ID_DangKyTiem,[dbo].[DSDangKyTiem].ID_CongDan,[dbo].[DSDangKyTiem].ID_DotTiem,[dbo].[DSDangKyTiem].TrangThai,[dbo].[ToKhaiYTe].TienSuNhiemCovid, [dbo].[ToKhaiYTe].DangMacBenhCapTinh,[dbo].[ToKhaiYTe].PhuNuMangThai,[dbo].[ToKhaiYTe].PhanVeDo3,[dbo].[ToKhaiYTe].SuyGiamMienDich,[dbo].[ToKhaiYTe].UngThu,[dbo].[ToKhaiYTe].TienSuDiUng,[dbo].[ToKhaiYTe].TienSuRoiLoanMau,[dbo].[ToKhaiYTe].RoiLoanTriGiacHanhVi,[dbo].[DSDangKyTiem].STTMuiTiem,[dbo].[DSDangKyTiem].YKienDongThuan FROM [dbo].[ToKhaiYTe],[dbo].[DSDangKyTiem] WHERE [dbo].[ToKhaiYTe].ID_ToKhaiYTe=[dbo].[DSDangKyTiem].ID_DangKyTiem AND ID_CongDan='"+id_congdan+"' AND [dbo].[DSDangKyTiem].ID_DotTiem='"+id_dottiem+"'AND [dbo].[DSDangKyTiem].TrangThai='0'");
+    print(res.toString());
     var cd = jsonDecode(res.toString());
     return res.toString();
   }

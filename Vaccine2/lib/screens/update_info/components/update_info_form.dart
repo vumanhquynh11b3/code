@@ -506,7 +506,7 @@ class ButtonDone extends StatelessWidget{
               return Dialog(
                 child: Padding(
                   child: Text(
-                      'Oke'),
+                      'Ok'),
                   padding: const EdgeInsets.all(8.0),
 
                 ),

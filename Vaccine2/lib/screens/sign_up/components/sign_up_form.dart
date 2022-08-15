@@ -167,7 +167,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 final checktk = await CheckTK();
                 print(gender.toString());
                 if (checkid == 0 && checktk == 0) {
-                  print('oke');
+
                   insertCD();
                   showDialog(
                     context: context,
@@ -646,9 +646,8 @@ class ButtonDone extends StatelessWidget {
           return Dialog(
             child: Padding(
               child: Text(
-                   'Oke'),
+                   'Ok'),
               padding: const EdgeInsets.all(8.0),
-
             ),
           );
         }
